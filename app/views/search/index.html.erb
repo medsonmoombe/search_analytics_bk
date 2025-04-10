@@ -1,0 +1,30 @@
+<div class="trending-container">
+  <header class="trending-header">
+    <h1>Discover What's Trending Now</h1>
+    <p class="subtitle">Explore the latest trends and popular searches</p>
+  </header>
+
+  <div class="search-container">
+    <input type="text" 
+           class="search-input" 
+           id="search-input" 
+           placeholder="Search for anything...">
+    <div class="search-icon">🔍</div>
+  </div>
+
+  <div class="trending-searches">
+    <h2>Today's Top 10 Trending Searches</h2>
+    <ol class="trending-list" id="trending-list">
+    <% if @popular_searches.empty? %>
+      <li class="no-trends">No trending searches available at the moment.</li>
+    <% else %>
+      <% @popular_searches.each do |search| %>
+        <li class="trending-item">
+          <span class="query"><%= search[:query] %></span>
+          <span class="count"><%= search[:count] %> searches</span>
+        </li>
+      <% end %>
+    <% end %>
+    </ol>
+  </div>
+</div>

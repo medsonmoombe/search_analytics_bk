@@ -1,0 +1,111 @@
+.trending-container {
+    padding: 2rem;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: white;
+    border-radius: 12px;
+  }
+
+  .trending-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .trending-header h1 {
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  .search-container {
+    position: relative;
+    margin: 2rem 0;
+  }
+  
+  .search-input {
+    width: 90%;
+    margin: auto;
+    padding: 1rem 1rem 1rem 3rem;
+    font-size: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #4d90fe;
+    box-shadow: 0 0 0 2px rgba(77, 144, 254, 0.2);
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .trending-searches {
+    margin-top: 3rem;
+  }
+  
+  .trending-searches h2 {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .trending-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .trending-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+  }
+  
+  .trending-item:hover {
+    background: #f8f8f8;
+  }
+  
+  .trending-item:nth-child(1) .query {
+    font-weight: bold;
+    color: #d23b3b;
+  }
+  
+  .trending-item:nth-child(2) .query {
+    font-weight: bold;
+    color: #e67e22;
+  }
+  
+  .trending-item:nth-child(3) .query {
+    font-weight: bold;
+    color: #f1c40f;
+  }
+  
+  .query {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .count {
+    font-size: 0.9rem;
+    color: #666;
+    background: #f0f0f0;
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px;
+  }
